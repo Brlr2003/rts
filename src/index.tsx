@@ -1,14 +1,12 @@
-import { createRoot } from "react-dom/client";
+import ReactDOM from 'react-dom';
+import UserSearch from './refs/UserSearch';
 
 const App = () => {
   return (
     <div>
-      <h1>Hi There!</h1>
+      <UserSearch />
     </div>
   );
 };
 
-const rootElement = document.getElementById("root");
-const root = createRoot(rootElement!);
-
-root.render(<App />);
+ReactDOM.render(<App />, document.querySelector('#root'));
